@@ -1,0 +1,61 @@
+---
+title       : My Calculator App
+subtitle    : R shiny app
+author      : Naveen Silvester
+job         : Data Scientist
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+url:
+  lib: ../../libraries
+  assets: ../../assets
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+---
+---
+
+## Slide 2: Introduction to My Calculator
+<a href="https://naveensilvester.shinyapps.io/MyCalculator/">My Calculator</a> is an application developed in R shiny. This application enables 
+user to enter two numbers and apply mathematical operations on it. Three mathematical
+operations are provided as choice. The default is Addition. The results from the mathematical
+operations is printed on to the main panel. The main panel also provides the option to see
+the Documentation/User Guide on checking the checkbox provided in the left side panel.
+Click here to access <a href="https://naveensilvester.shinyapps.io/MyCalculator/"> My Calculator Application </a>
+Following are the Input fields that the App uses
+
+1.  First Number
+2.  Second Number
+3.  Mathematical Operator (Default Addition)
+4.  Citation (Default is Yes)
+5.  Documentation/UserGuid (Default is No)
+
+---
+
+
+## Slide 3: Mathematical Function - Addition
+```{r, echo=TRUE}
+  First_Number <- 10
+  Second_Number <- 20
+  sum(First_Number + Second_Number)
+```
+
+---
+
+## Slide 4: Mathematical Function - Subtraction
+```{r, echo=TRUE}
+  First_Number <- 100
+  Second_Number <- 20
+  Subtraction <- (First_Number - Second_Number)
+  Subtraction
+```
+
+---
+
+
+## Slide 5: Mathematical Function - Multiplication
+```{r, echo=TRUE}
+  First_Number <- 10
+  Second_Number <- 20
+  Product <- (First_Number * Second_Number)
+  Product
+```
